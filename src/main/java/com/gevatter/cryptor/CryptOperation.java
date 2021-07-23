@@ -13,19 +13,13 @@ public class CryptOperation {
     private String text;
 
     public String encode() {
-        byte[] bytes = text.getBytes();
-        for (int i = 0; i < bytes.length; i++) {
-            bytes[i] = (byte) ~bytes[i];
-        }
+        byte[] bytes = flipBytes(text.getBytes());
         return Base64.getEncoder().encodeToString(bytes);
     }
 
     public String decode() {
-        byte[] bytes = Base64.getDecoder().decode(text);
-        for (int i = 0; i < bytes.length; i++) {
-            bytes[i] = (byte) ~bytes[i];
-        }
-        return  new String(bytes);
+        byte[] bytes = flipBytes(Base64.getDecoder().decode(text));
+        return new String(bytes);
     }
 
     public Availability isAvailable() {
@@ -37,5 +31,12 @@ public class CryptOperation {
 
     private boolean isTextSet() {
         return StringUtils.hasText(this.text);
+    }
+
+    private byte[] flipBytes(byte[] bytes) {
+        for (int i = 0; i < bytes.length; i++) {
+            bytes[i] = (byte) ~bytes[i];
+        }
+        return bytes;
     }
 }
