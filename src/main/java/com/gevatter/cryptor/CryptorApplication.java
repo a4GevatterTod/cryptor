@@ -1,4 +1,4 @@
-package com.gevatter.cryptor.cryptor;
+package com.gevatter.cryptor;
 
 import org.jline.utils.AttributedString;
 import org.jline.utils.AttributedStyle;

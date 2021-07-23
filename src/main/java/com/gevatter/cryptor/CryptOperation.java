@@ -1,4 +1,4 @@
-package com.gevatter.cryptor.cryptor.model;
+package com.gevatter.cryptor;
 
 import java.util.Base64;
 import lombok.Data;
