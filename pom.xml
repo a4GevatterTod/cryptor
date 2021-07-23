@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.gevatter.cryptor</groupId>
 	<artifactId>cryptor</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>cryptor</name>
 	<description>Cryptor to anny people</description>
 	<properties>
