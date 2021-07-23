@@ -16,7 +16,7 @@ Or if they know this litte app.
 ### use prebuild binary
 - download latest cryptor-x.x.x.jar from https://github.com/a4GevatterTod/cryptor/releases
 
-##usage
+## usage
 - cd to the directory containing the jar file
 - run `java -jar cryptor-x.x.x.jar` Substitute the x'es with the project number
 - type `help` to see available commands
